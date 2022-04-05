@@ -9,5 +9,13 @@ class Fruitstore {
         for (Fruit fruit : fruits) {
             System.out.println(fruit.getName() + " - RM" + fruit.getPricePerKilogram() + "/kg");
         }
+
+        Inventory inventory = new Inventory();
+        inventory.addToInventory(fruits[0], 100);
+        inventory.display();
+        inventory.addToInventory(fruits[0], 20);
+        inventory.display();
+        inventory.removeToInventory(fruits[0], 30);
+        inventory.display();
     }
 }
