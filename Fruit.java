@@ -4,22 +4,22 @@ public class Fruit {
     private double pricePerKilogram;
 
     public Fruit(String name, String type, double pricePerKilogram) {
-        this.name = SetName(name);
-        this.type = SetType(type);
-        this.pricePerKilogram = SetPricePerkilogram(pricePerKilogram);
+        this.name = setName(name);
+        this.type = setType(type);
+        this.pricePerKilogram = setPricePerkilogram(pricePerKilogram);
     }
 
-    public String SetName(String name) {
+    public String setName(String name) {
         this.name = name;
         return name;
     }
 
-    public String SetType(String type) {
+    public String setType(String type) {
         this.type = type;
         return type;
     }
 
-    public double SetPricePerkilogram(double pricePerKilogram) {
+    public double setPricePerkilogram(double pricePerKilogram) {
         if (pricePerKilogram <= 0.0) {
             System.out.println("Price cannot be lower than 0");
             return this.pricePerKilogram;
@@ -29,15 +29,15 @@ public class Fruit {
         }
     }
 
-    public String GetName() {
+    public String getName() {
         return name;
     }
 
-    public String GetType() {
+    public String getType() {
         return type;
     }
 
-    public double GetPricePerKilogram() {
+    public double getPricePerKilogram() {
         return pricePerKilogram;
     }
 }
